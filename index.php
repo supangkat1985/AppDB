@@ -27,13 +27,13 @@
  </form>
  <?php
     $host = "supangkatappserver.database.windows.net";
-    $user = "supangkat";
+    $user = "supangkat@supangkatappserver";
     $pass = "Bangsat123";
     $db = "dicodingdb";
 
 // PHP Data Objects(PDO) Sample Code:
 try {
-    $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = dicodingdb", "supangkat", "Bangsat123");
+    $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = dicodingdb", "supangkat@supangkatappserver", "Bangsat123");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
