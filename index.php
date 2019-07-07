@@ -33,7 +33,7 @@
     
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "supangkat@supangkatappserver", "pwd" => "Bangsat123", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$connectionInfo = array("UID" => "supangkat@supangkatappserver", "pwd" => "Bangsat123", "dicodingdb" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:supangkatappserver.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
