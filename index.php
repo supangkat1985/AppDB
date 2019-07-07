@@ -27,8 +27,8 @@
  </form>
  <?php
     $host = "supangkatappserver.database.windows.net";
-    $user = "supangkat";
-    $pass = "Bangsat123";
+    $user = "supangkat@supangkatappserver";
+    $pass = "Bangsat123_";
     $db = "dicodingdb";
 
     try {
