@@ -26,16 +26,9 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
 <?php
-    $host = "supangkatappserver.database.windows.net";
-    $user = "supangkat";
-    $pass = "Bangsat123";
-    $db = "dicodingdb";
-    try {
-        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
-        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exception $e) {
-        echo "Failed: " . $e;
-    }
+    
+Driver={ODBC Driver 13 for SQL Server};Server=tcp:supangkatappserver.database.windows.net,1433;Database=dicodingdb;Uid=supangkat@supangkatappserver;Pwd={Bangsat123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+
     if (isset($_POST['submit'])) {
         try {
             $name = $_POST['name'];
