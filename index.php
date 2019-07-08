@@ -27,7 +27,7 @@
  </form>
 <?php
     
-Driver={ODBC Driver 13 for SQL Server};Server=tcp:supangkatappserver.database.windows.net,1433;Database=dicodingdb;Uid=supangkat@supangkatappserver;Pwd={Bangsat123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+Driver={ODBC Driver 13 for SQL Server};Server=tcp:supangkatappserver.database.windows.net,1433;Database=dicodingdb;Uid=supangkat@supangkatappserver;Pwd=Bangsat123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
 
     if (isset($_POST['submit'])) {
         try {
