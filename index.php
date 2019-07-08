@@ -26,8 +26,15 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
 <?php
-    
-Driver={ODBC Driver 13 for SQL Server};Server=tcp:supangkatappserver.database.windows.net,1433;Database=dicodingdb;Uid=supangkat@supangkatappserver;Pwd={Bangsat123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+// PHP Data Objects(PDO) Sample Code:
+try {
+    $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = dicodingdb", "supangkat", "{Bangsat123}");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}    
 
     if (isset($_POST['submit'])) {
         try {
