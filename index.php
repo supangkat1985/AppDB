@@ -36,11 +36,6 @@ catch (PDOException $e) {
     print("Error connecting to SQL Server.");
     die(print_r($e));
 }
-
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "supangkat@supangkatappserver", "pwd" => "Bangsat123", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:supangkatappserver.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
 ?>
 
     if (isset($_POST['submit'])) {
