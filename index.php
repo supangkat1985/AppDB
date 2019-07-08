@@ -25,7 +25,7 @@
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
-<?php
+
     
 Driver={ODBC Driver 13 for SQL Server};Server=tcp:supangkatappserver.database.windows.net,1433;Database=dicodingdb;Uid=supangkat@supangkatappserver;Pwd=Bangsat123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
 
@@ -74,6 +74,6 @@ Driver={ODBC Driver 13 for SQL Server};Server=tcp:supangkatappserver.database.wi
             echo "Failed: " . $e;
         }
     }
- ?>
+ 
  </body>
  </html>
