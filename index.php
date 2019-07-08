@@ -26,7 +26,8 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
 
- // PHP Data Objects(PDO) Sample Code:
+<?php
+//PHP Data Objects(PDO) Sample Code:
 try {
     $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = dicodingdb", "supangkat", "Bangsat123");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -40,7 +41,7 @@ catch (PDOException $e) {
 $connectionInfo = array("UID" => "supangkat@supangkatappserver", "pwd" => "Bangsat123", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:supangkatappserver.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
-
+?>
 
     if (isset($_POST['submit'])) {
         try {
