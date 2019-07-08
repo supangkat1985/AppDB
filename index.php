@@ -26,7 +26,7 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
 <?php
-    $host = "cp:supangkatappserver.database.windows.net,1433";
+    $host = "tcp:supangkatappserver.database.windows.net,1433";
     $user = "supangkat";
     $pass = "Bangsat123";
     $db = "dicodingdb";
