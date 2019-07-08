@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
   <?php
-    $host = "<supangkatappserver.database.windows.net,1433>";
-    $user = "<supangkat>";
-    $pass = "<Bangsat123>";
-    $db = "<dicodingdb>";
+    $host = "supangkatappserver.database.windows.net,1433";
+    $user = "supangkat";
+    $pass = "Bangsat123";
+    $db = "dicodingdb";
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
