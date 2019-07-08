@@ -27,8 +27,8 @@
  </form>
   <?php
     $host = "supangkatappserver.database.windows.net";
-    $user = "supangkat";
-    $pass = "Bangsat123";
+    //$user = "supangkat";
+    //$pass = "Bangsat123";
     $db = "dicodingdb";
     try {
         $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = $db", supangkat, Bangsat123);
