@@ -31,7 +31,7 @@
     $pass = "Bangsat123";
     $db = "dicodingdb";
     try {
-        $conn = new PDO("server = $host; Database = $db", $user, $pass);
+        $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     } catch(Exception $e) {
         echo "Failed: " . $e;
