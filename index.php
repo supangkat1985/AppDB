@@ -37,11 +37,6 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}    
-
     if (isset($_POST['submit'])) {
         try {
             $name = $_POST['name'];
