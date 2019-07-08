@@ -88,6 +88,6 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
             echo "Failed: " . $e;
         }
     }
- ?>
+ 
  </body>
  </html>
