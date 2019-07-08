@@ -25,26 +25,17 @@
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
- <?php
-   $host = "tcp:supangkatappserver.database.windows.net";
-   $user = "supangkat";
-   $pass = "Bangsat123";
-   $db = "dicodingdb";
-    
-// PHP Data Objects(PDO) Sample Code:
-try {
-    $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = dicodingdb", "supangkat", "Bangsat123");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
-
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "supangkat@supangkatappserver", "pwd" => "Bangsat123", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:supangkatappserver.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+  <?php
+    $host = "<supangkatappserver.database.windows.net>";
+    $user = "<supangkat>";
+    $pass = "<Bangsat123>";
+    $db = "<dicodingdb>";
+    try {
+        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
+        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    } catch(Exception $e) {
+        echo "Failed: " . $e;
+    }
 
 
     if (isset($_POST['submit'])) {
