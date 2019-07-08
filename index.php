@@ -25,11 +25,11 @@
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
- <?php
-    $host = "supangkatappserver.database.windows.net";
-    $user = "supangkat";
-    $pass = "Bangsat123";
-    $db = "dicodingdb";
+// <?php
+//    $host = "supangkatappserver.database.windows.net";
+//    $user = "supangkat";
+//    $pass = "Bangsat123";
+//    $db = "dicodingdb";
     
 // PHP Data Objects(PDO) Sample Code:
 try {
