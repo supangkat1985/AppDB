@@ -36,7 +36,7 @@ catch (PDOException $e) {
     print("Error connecting to SQL Server.");
     die(print_r($e));
 }
-?>
+
 
     if (isset($_POST['submit'])) {
         try {
@@ -84,6 +84,7 @@ catch (PDOException $e) {
             echo "Failed: " . $e;
         }
     }
- 
+?> 
+
  </body>
  </html>
