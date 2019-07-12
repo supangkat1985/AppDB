@@ -29,7 +29,7 @@
     
 // PHP Data Objects(PDO) Sample Code:
 try {
-    $conn = new PDO("sqlsrv:server = tcp:supangkatappserver.database.windows.net,1433; Database = dicodingdb", "supangkat", "Bangsat123");
+    $conn = new PDO("sqlsrv:server = tcp:supangkat.database.windows.net,1433; Database = supangkatdb", "supangkat", "Password_");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
@@ -38,9 +38,10 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "supangkat@supangkatappserver", "pwd" => "Bangsat123", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:supangkatappserver.database.windows.net,1433";
+$connectionInfo = array("UID" => "supangkat@supangkat", "pwd" => "Password_", "Database" => "supangkatdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:supangkat.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+
 
     if (isset($_POST['submit'])) {
         try {
